@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    overflow: hidden;
+  }
+  
+  .webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    outline: none;
+  }
+  
+  /* Botón de instrucciones */
+  #Instrucciones {
+    position: fixed;
+    top: 20px;
+    left: 1050px;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    font-size: 14px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Caja de instrucciones */
+  #cajaInstrucciones {
+    position: fixed;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: none;
+    z-index: 20;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  }
+  
+  /* Botón de información */
+  #InformacionBtn {
+    position: fixed;
+    top: 20px;
+    left: 1300px;
+    width: 120px;
+    height: 30px;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Caja de información */
+  #infoBox {
+    position: fixed;
+    bottom: 70px;
+    right: 50px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: none;
+    z-index: 20;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  }
+  
+  /* Botón de sonido */
+  #toggleSound {
+    position: fixed;
+    top: 20px;
+    left: 1150px;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  

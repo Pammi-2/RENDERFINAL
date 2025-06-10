@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Caja musical</title>
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Font Awesome para íconos -->
+  
+</head>
+<body>
+  <canvas class="webgl"></canvas>
+
+  <!-- Botones -->
+  <button id="Instrucciones">
+    <i class="fas fa-question-circle" style="color: white;"></i> Instrucciones
+  </button>
+  
+  <div id="cajaInstrucciones" style="display: none;">
+    
+    <p>Haz <strong>scroll</strong> para abrir el tocadiscos</p>
+    <p>Haz <strong>click en la pantalla</strong> para que el vinilo entre.</p>
+    <p>Presiona <strong>Espacio</strong> para girar el vinilo.</p>
+    <p>Presiona <strong>1</strong> o <strong>2</strong> para cambiar de canción/personaje.</p>
+    <p>Haz <strong>click en la lámpara</strong> para cambiar la iluminación.</p>
+  </div>
+
+  <button id="toggleSound">Sonido 🔊</button>
+
+  <button id="InformacionBtn">
+    <i class="fas fa-info-circle" style="color: white;"></i> Información
+  </button>
+  <div id="infoBox" style="display: none;">
+    <strong>Fiona Apple</strong> Fiona Apple es una cantautora estadounidense conocida por su estilo único que mezcla piano, letras profundas y emociones crudas. 
+    Su canción "I Know", del álbum Extraordinary Machine (2005), combina arreglos orquestales con un piano dinámico y habla sobre la vulnerabilidad y el autoconocimiento en el amor</p>
+
+     <strong>Alex Turner</strong> Alex Turner compuso la banda sonora de la película británica Submarine (2010), dirigida por Richard Ayoade. 
+     Su trabajo incluyó canciones originales y piezas instrumentales que capturan el tono melancólico y nostálgico del film, mezclando indie rock suave con toques introspectivos </p>
+    
+  </div>
+
+  <script type="module" src="./script.js"></script>
+
+  <script>
+    // Mostrar/ocultar caja de instrucciones
+    document.getElementById('Instrucciones').addEventListener('click', () => {
+      const caja = document.getElementById('cajaInstrucciones');
+      caja.style.display = (caja.style.display === 'block') ? 'none' : 'block';
+    });
+
+    // Mostrar/ocultar info
+    document.getElementById('InformacionBtn').addEventListener('click', () => {
+      const info = document.getElementById('infoBox');
+      info.style.display = (info.style.display === 'block') ? 'none' : 'block';
+    });
+  </script>
+</body>
+</html>
