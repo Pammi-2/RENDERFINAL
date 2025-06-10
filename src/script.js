@@ -39,9 +39,8 @@ const gradient = ctx.createRadialGradient(
     canvasGradient.width / 2
 );
 
-gradient.addColorStop(0, '#7B3FBF');  // púrpura intenso
-gradient.addColorStop(0.9, '#9E64D9'); // violeta brillante
-gradient.addColorStop(1, '#B38FEF'); 
+gradient.addColorStop(0.8, '#dde1ff'); 
+gradient.addColorStop(1, '#e1e3ef'); 
 
 ctx.fillStyle = gradient;
 ctx.fillRect(0, 0, canvasGradient.width, canvasGradient.height);
