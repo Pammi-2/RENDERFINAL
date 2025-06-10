@@ -266,7 +266,7 @@ gltfLoader.load(
 //Alex Turner
 
 gltfLoader.load(
-    '/models//personaje/personaje2_draco.glb',
+    '/models/personaje/personaje2_draco.glb',
     (gltf) =>
     {
         gltf.scene.scale.set(2, 2, 2)
@@ -500,13 +500,6 @@ window.addEventListener('wheel', (event) => {
     if (!transicionHecha) {
         hacerTransicionCamara();
     }
-});
-
-// Aquí registras el listener solo una vez
-window.addEventListener('wheel', (event) => {
-  if (!transicionHecha) {
-    hacerTransicionCamara();
-  }
 });
 
 
