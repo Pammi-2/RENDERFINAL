@@ -195,6 +195,7 @@ let viniloPivot = new THREE.Group(); // Grupo que rotará
 
 scene.add(viniloPivot); 
 gltfLoader.load('/models/vinil/discovinilo-optimized.gltf', (gltf) => {
+  
     vinilo = gltf.scene
     vinilo.scale.set(6.5, 6.5, 6.5)
 
@@ -216,6 +217,7 @@ gltfLoader.load('/models/vinil/discovinilo-optimized.gltf', (gltf) => {
 
 
     function animatediscovinilo() {
+        if (!scrollActivado) return; 
         if (animacionEjecutada) return; // si ya se ejecutó, no hacer nada
     
         
@@ -446,6 +448,7 @@ const floatParams345 = { amplitude: 0.1, speed: 8 };
 
 // scroll camara 
 let transicionHecha = false;
+let scrollActivado = false;
 
 function hacerTransicionCamara() {
     transicionHecha = true;
@@ -499,6 +502,10 @@ window.addEventListener('wheel', (event) => {
     if (!transicionHecha) {
         hacerTransicionCamara();
     }
+    if (!scrollActivado) {
+        scrollActivado = true;
+        console.log("Scroll activado. Ahora se puede hacer clic.");
+      }
 });
 
 
